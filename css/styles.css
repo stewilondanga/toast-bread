@@ -150,25 +150,17 @@ input[type="checkbox"]:checked~.ToasterBodyBack>.bread {
   animation: 3s ease flipBread forwards;
 }
 
-input[type="checkbox"]:checked
-~ .ToasterBodyBack
-> .bread
-> .toast-marks
-> #line1 {
+input[type="checkbox"]:checked~.ToasterBodyBack>.bread>.toast-marks>#line1 {
   -webkit-animation: 3s toastMarks forwards;
-          animation: 3s toastMarks forwards;
+  animation: 3s toastMarks forwards;
+}
+
+input[type="checkbox"]:checked~.ToasterBodyBack>.bread>.toast-marks>#line2 {
+  -webkit-animation: 3s toastMarks forwards;
+  animation: 3s toastMarks forwards;
 }
 
 /*input[type="checkbox"]:checked
-~ .ToasterBodyBack
-> .bread
-> .toast-marks
-> #line2 {
-  -webkit-animation: 3s toastMarks forwards;
-          animation: 3s toastMarks forwards;
-}
-
-input[type="checkbox"]:checked
 ~ .ToasterBodyBack
 > .bread
 > .toast-marks
