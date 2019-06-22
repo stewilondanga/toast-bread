@@ -160,13 +160,9 @@ input[type="checkbox"]:checked~.ToasterBodyBack>.bread>.toast-marks>#line2 {
   animation: 3s toastMarks forwards;
 }
 
-/*input[type="checkbox"]:checked
-~ .ToasterBodyBack
-> .bread
-> .toast-marks
-> #line3 {
+input[type="checkbox"]:checked~.ToasterBodyBack>.bread>.toast-marks>#line3 {
   -webkit-animation: 3s toastMarks forwards;
-          animation: 3s toastMarks forwards;
+  animation: 3s toastMarks forwards;
 }
 
 /*input[type="checkbox"]:checked ~ .lines> .lines-top {
