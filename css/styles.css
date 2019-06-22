@@ -57,7 +57,7 @@ body {
   z-index: -1;
 }
 
-/*.ToasterBodyBack .hole {
+.ToasterBodyBack .hole {
   height: 10px;
   width: 160px;
   background: #333;
@@ -68,7 +68,8 @@ body {
   left: 20px;
   top: 0px;
 }
-.ToasterBodyBack .bread {
+
+/*.ToasterBodyBack .bread {
   position: absolute;
   height: 100px;
   width: 100px;
