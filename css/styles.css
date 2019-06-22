@@ -38,7 +38,7 @@ body {
   border-radius: 0px 0px 8px 8px;
 }
 
-/*.ToasterBodyFront {
+.ToasterBodyFront {
   background: #eee;
   z-index: 1;
   position: absolute;
@@ -48,7 +48,7 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 
-.ToasterBodyBack {
+/*.ToasterBodyBack {
   background: #eee;
   width: 200px;
   height: 110px;
