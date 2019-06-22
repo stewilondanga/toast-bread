@@ -387,7 +387,7 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   }
 }
 
-/*.lines-top {
+.lines-top {
   position: absolute;
   top: -48.5%;
   left: 34%;
@@ -397,12 +397,12 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   border-color: #333 transparent transparent transparent;
   border-radius: 50%/100% 100% 0 0;
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   margin-left: 2px;
   opacity: 0;
 }
 
-.lines-bottom {
+/*.lines-bottom {
   position: absolute;
   top: -29%;
   left: 30%;
