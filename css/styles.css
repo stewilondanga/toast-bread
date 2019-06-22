@@ -171,47 +171,53 @@ input[type="checkbox"]:checked~.ToasterBodyBack>.bread>.toast-marks>#line3 {
 input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   animation: 3s heatLines forwards;
 }*/
-/*@-webkit-keyframes flipBread {
+@-webkit-keyframes flipBread {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     top: -15%;
     left: 24%;
   }
+
   25% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     top: 4%;
     left: 24%;
   }
+
   50% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     top: 4%;
     left: 24%;
   }
+
   60% {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     top: -150%;
     left: 24%;
   }
+
   70% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
     top: -15%;
     left: 24%;
   }
+
   100% {
     -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
-@keyframes flipBread {
+
+/*@keyframes flipBread {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
