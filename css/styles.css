@@ -140,12 +140,12 @@ input[type="checkbox"] {
   display: none;
 }
 
-/*input[type="checkbox"]:checked + .handle {
+input[type="checkbox"]:checked+.handle {
   -webkit-animation: 3s ease switch forwards;
-          animation: 3s ease switch forwards;
+  animation: 3s ease switch forwards;
 }
 
-input[type="checkbox"]:checked ~ .ToasterBodyBack > .bread {
+/*input[type="checkbox"]:checked ~ .ToasterBodyBack > .bread {
   -webkit-animation: 3s ease flipBread forwards;
           animation: 3s ease flipBread forwards;
 }
