@@ -48,7 +48,7 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 
-/*.ToasterBodyBack {
+.ToasterBodyBack {
   background: #eee;
   width: 200px;
   height: 110px;
@@ -56,7 +56,8 @@ body {
   position: relative;
   z-index: -1;
 }
-.ToasterBodyBack .hole {
+
+/*.ToasterBodyBack .hole {
   height: 10px;
   width: 160px;
   background: #333;
