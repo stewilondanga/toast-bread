@@ -422,15 +422,14 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   opacity: 0;
 }
 
-/*.lines-top:nth-of-type(3) {
+.lines-top:nth-of-type(3) {
   top: -48%;
   left: 52%;
   opacity: 0;
   margin-left: 4px;
 }
 
-
-.containers {
+/*.containers {
   width: 520px;
   margin: 20px auto;
 }
