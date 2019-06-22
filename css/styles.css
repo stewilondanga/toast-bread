@@ -480,7 +480,7 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   color: #04d;
 }
 
-/*.cal td {
+.cal td {
   padding: 0 2px;
   line-height: 100%;
 }
