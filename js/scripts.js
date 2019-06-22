@@ -7,8 +7,8 @@ var navigate = (function() {
   });
 })();
 
-/*document.querySelector(".bread").addEventListener("animationend", function(){
-    if (document.getElementById("checkbox-1").checked == true) {
-        document.getElementById("checkbox-1").checked = false;
-    }
+document.querySelector(".bread").addEventListener("animationend", function() {
+  if (document.getElementById("checkbox-1").checked == true) {
+    document.getElementById("checkbox-1").checked = false;
+  }
 });
