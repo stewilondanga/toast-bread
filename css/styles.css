@@ -83,13 +83,14 @@ body {
   z-index: 1;
 }
 
-/*.ToasterBodyBack .bread .toast-marks {
+.ToasterBodyBack .bread .toast-marks {
   width: 80px;
   margin: auto;
   height: 80px;
   position: relative;
 }
-.ToasterBodyBack .bread .toast-marks #line1 {
+
+/*.ToasterBodyBack .bread .toast-marks #line1 {
   width: 10px;
   height: 85px;
   border-radius: 4px;
