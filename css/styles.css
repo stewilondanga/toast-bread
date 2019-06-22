@@ -343,24 +343,29 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   }
 }
 
-/*@-webkit-keyframes switch {
+@-webkit-keyframes switch {
   0% {
     top: 25%;
   }
+
   25% {
     top: 70%;
   }
+
   50% {
     top: 70%;
   }
+
   58% {
     top: 25%;
   }
+
   100% {
     top: 25%;
   }
 }
-@keyframes switch {
+
+/*@keyframes switch {
   0% {
     top: 25%;
   }
