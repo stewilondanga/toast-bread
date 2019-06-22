@@ -365,24 +365,29 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   }
 }
 
-/*@keyframes switch {
+@keyframes switch {
   0% {
     top: 25%;
   }
+
   25% {
     top: 70%;
   }
+
   50% {
     top: 70%;
   }
+
   58% {
     top: 25%;
   }
+
   100% {
     top: 25%;
   }
 }
-.lines-top {
+
+/*.lines-top {
   position: absolute;
   top: -48.5%;
   left: 34%;
