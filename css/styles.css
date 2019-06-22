@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -20,6 +20,389 @@ body {
 .my_social a img {
   height: 1.5em;
 }
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8d6e63;
+}
+
+.toaster {
+  width: 200px;
+  position: relative;
+}
+
+.base {
+  width: 200px;
+  height: 20px;
+  background: #333;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.ToasterBodyFront {
+  background: #eee;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.ToasterBodyBack {
+  background: #eee;
+  width: 200px;
+  height: 110px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  z-index: -1;
+}
+.ToasterBodyBack .hole {
+  height: 10px;
+  width: 160px;
+  background: #333;
+  margin: 0px auto;
+  border-radius: 40px;
+  z-index: 0;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+}
+.ToasterBodyBack .bread {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: #ffcb5e;
+  top: -15%;
+  left: 24%;
+  z-index: 0;
+  border-radius: 4px;
+  border: 2px solid #dd9a4b;
+  margin: auto;
+  z-index: 1;
+}
+.ToasterBodyBack .bread .toast-marks {
+  width: 80px;
+  margin: auto;
+  height: 80px;
+  position: relative;
+}
+.ToasterBodyBack .bread .toast-marks #line1 {
+  width: 10px;
+  height: 85px;
+  border-radius: 4px;
+  margin: 5px auto;
+  background: #dd9a4b;
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+}
+.ToasterBodyBack .bread .toast-marks #line2 {
+  width: 10px;
+  height: 85px;
+  border-radius: 4px;
+  margin: 5px auto;
+  background: #dd9a4b;
+  position: absolute;
+  left: 35px;
+  opacity: 0;
+}
+.ToasterBodyBack .bread .toast-marks #line3 {
+  width: 10px;
+  height: 85px;
+  border-radius: 4px;
+  margin: 5px auto;
+  background: #dd9a4b;
+  position: absolute;
+  left: 60px;
+  opacity: 0;
+}
+
+.handle {
+  position: absolute;
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  left: 100%;
+  top: 25%;
+  background: #333;
+  z-index: 1;
+  border-radius: 0px 2px 2px 0px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .handle {
+  -webkit-animation: 3s ease switch forwards;
+          animation: 3s ease switch forwards;
+}
+
+input[type="checkbox"]:checked ~ .ToasterBodyBack > .bread {
+  -webkit-animation: 3s ease flipBread forwards;
+          animation: 3s ease flipBread forwards;
+}
+
+input[type="checkbox"]:checked
+~ .ToasterBodyBack
+> .bread
+> .toast-marks
+> #line1 {
+  -webkit-animation: 3s toastMarks forwards;
+          animation: 3s toastMarks forwards;
+}
+
+input[type="checkbox"]:checked
+~ .ToasterBodyBack
+> .bread
+> .toast-marks
+> #line2 {
+  -webkit-animation: 3s toastMarks forwards;
+          animation: 3s toastMarks forwards;
+}
+
+input[type="checkbox"]:checked
+~ .ToasterBodyBack
+> .bread
+> .toast-marks
+> #line3 {
+  -webkit-animation: 3s toastMarks forwards;
+          animation: 3s toastMarks forwards;
+}
+
+/*input[type="checkbox"]:checked ~ .lines> .lines-top {
+  animation: 3s heatLines forwards;
+}
+input[type="checkbox"]:checked ~ .lines> .lines-bottom {
+  animation: 3s heatLines forwards;
+}*/
+/*@-webkit-keyframes flipBread {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -15%;
+    left: 24%;
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 4%;
+    left: 24%;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 4%;
+    left: 24%;
+  }
+  60% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    top: -150%;
+    left: 24%;
+  }
+  70% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    top: -15%;
+    left: 24%;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@keyframes flipBread {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: -15%;
+    left: 24%;
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 4%;
+    left: 24%;
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 4%;
+    left: 24%;
+  }
+  60% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    top: -150%;
+    left: 24%;
+  }
+  70% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    top: -15%;
+    left: 24%;
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+@-webkit-keyframes heatLines {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes heatLines {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  43.5% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes toastMarks {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes toastMarks {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes switch {
+  0% {
+    top: 25%;
+  }
+  25% {
+    top: 70%;
+  }
+  50% {
+    top: 70%;
+  }
+  58% {
+    top: 25%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+@keyframes switch {
+  0% {
+    top: 25%;
+  }
+  25% {
+    top: 70%;
+  }
+  50% {
+    top: 70%;
+  }
+  58% {
+    top: 25%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+.lines-top {
+  position: absolute;
+  top: -48.5%;
+  left: 34%;
+  width: 20px;
+  height: 10px;
+  border: solid 6px #333;
+  border-color: #333 transparent transparent transparent;
+  border-radius: 50%/100% 100% 0 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 2px;
+  opacity: 0;
+}
+
+.lines-bottom {
+  position: absolute;
+  top: -29%;
+  left: 30%;
+  width: 20px;
+  height: 10px;
+  border: solid 6px #333;
+  border-color: #333 transparent transparent transparent;
+  border-radius: 50%/100% 100% 0 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0;
+}
+
+.lines-bottom:nth-of-type(4) {
+  top: -29%;
+  left: 50%;
+  opacity: 0;
+}
+
+.lines-top:nth-of-type(3) {
+  top: -48%;
+  left: 52%;
+  opacity: 0;
+  margin-left: 4px;
+}
+
 
 .containers {
   width: 520px;
