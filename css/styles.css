@@ -315,18 +315,21 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   }
 }
 
-/*@-webkit-keyframes toastMarks {
+@-webkit-keyframes toastMarks {
   0% {
     opacity: 0;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
-@keyframes toastMarks {
+
+/*@keyframes toastMarks {
   0% {
     opacity: 0;
   }
