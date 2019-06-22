@@ -289,27 +289,33 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   }
 }
 
-/*@keyframes heatLines {
+@keyframes heatLines {
   0% {
     opacity: 0;
   }
+
   25% {
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   37.5% {
     opacity: 0;
   }
+
   43.5% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
 }
-@-webkit-keyframes toastMarks {
+
+/*@-webkit-keyframes toastMarks {
   0% {
     opacity: 0;
   }
