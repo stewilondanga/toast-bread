@@ -136,11 +136,11 @@ body {
   cursor: pointer;
 }
 
-/*input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked + .handle {
+/*input[type="checkbox"]:checked + .handle {
   -webkit-animation: 3s ease switch forwards;
           animation: 3s ease switch forwards;
 }
