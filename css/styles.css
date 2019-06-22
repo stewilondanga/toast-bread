@@ -26,13 +26,12 @@ body {
   height: 1.5em;
 }
 
-/*
 .toaster {
   width: 200px;
   position: relative;
 }
 
-.base {
+/*.base {
   width: 200px;
   height: 20px;
   background: #333;
