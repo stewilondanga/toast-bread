@@ -145,12 +145,12 @@ input[type="checkbox"]:checked+.handle {
   animation: 3s ease switch forwards;
 }
 
-/*input[type="checkbox"]:checked ~ .ToasterBodyBack > .bread {
+input[type="checkbox"]:checked~.ToasterBodyBack>.bread {
   -webkit-animation: 3s ease flipBread forwards;
-          animation: 3s ease flipBread forwards;
+  animation: 3s ease flipBread forwards;
 }
 
-input[type="checkbox"]:checked
+/*input[type="checkbox"]:checked
 ~ .ToasterBodyBack
 > .bread
 > .toast-marks
