@@ -429,12 +429,12 @@ input[type="checkbox"]:checked ~ .lines> .lines-bottom {
   margin-left: 4px;
 }
 
-/*.containers {
+.containers {
   width: 520px;
   margin: 20px auto;
 }
 
-#contact h1 {
+/*#contact h1 {
   font-family: helvetica;
   font-weight: normal;
   text-align: center;
