@@ -90,7 +90,7 @@ body {
   position: relative;
 }
 
-/*.ToasterBodyBack .bread .toast-marks #line1 {
+.ToasterBodyBack .bread .toast-marks #line1 {
   width: 10px;
   height: 85px;
   border-radius: 4px;
@@ -100,7 +100,8 @@ body {
   left: 10px;
   opacity: 0;
 }
-.ToasterBodyBack .bread .toast-marks #line2 {
+
+/*.ToasterBodyBack .bread .toast-marks #line2 {
   width: 10px;
   height: 85px;
   border-radius: 4px;
